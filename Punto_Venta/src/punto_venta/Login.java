@@ -30,6 +30,12 @@ public class Login extends javax.swing.JFrame {
         panelRound2.setLocation(-180, 0);
         panel_card.setLocation(0, 40);
         setBackground(new Color(1.0f,1.0f,1.0f,0.0f));
+        //Da como prioridad la el panel de menu
+        
+    }
+}
+        
+        
     }
 
     /**
@@ -48,9 +54,9 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         btn_cerrar2 = new javax.swing.JButton();
-        btn_ExitMenu1 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        btn_ExitMenu1 = new javax.swing.JButton();
         btn_Cerrar = new javax.swing.JButton();
         btn_minimizar = new javax.swing.JButton();
         panel_card = new javax.swing.JPanel();
@@ -80,13 +86,18 @@ public class Login extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jTextField4 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txt_rfc = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         lbl_Insert_Imagen = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        txt_r_usuario = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel19 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         Panel_Accerca = new javax.swing.JPanel();
         Menu = new javax.swing.JLabel();
@@ -157,17 +168,6 @@ public class Login extends javax.swing.JFrame {
         });
         panelRound2.add(btn_cerrar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 150, 30));
 
-        btn_ExitMenu1.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
-        btn_ExitMenu1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_ExitMenu1.setText("X");
-        btn_ExitMenu1.setContentAreaFilled(false);
-        btn_ExitMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_ExitMenu1ActionPerformed(evt);
-            }
-        });
-        panelRound2.add(btn_ExitMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
-
         jButton5.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(0, 0, 0));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-home-button-50.png"))); // NOI18N
@@ -194,7 +194,18 @@ public class Login extends javax.swing.JFrame {
         });
         panelRound2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
-        panel_principal.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 490));
+        btn_ExitMenu1.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
+        btn_ExitMenu1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_ExitMenu1.setText("X");
+        btn_ExitMenu1.setContentAreaFilled(false);
+        btn_ExitMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ExitMenu1ActionPerformed(evt);
+            }
+        });
+        panelRound2.add(btn_ExitMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, -1, -1));
+
+        panel_principal.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -180, 490));
 
         btn_Cerrar.setFont(new java.awt.Font("Lucida Sans", 0, 14)); // NOI18N
         btn_Cerrar.setForeground(new java.awt.Color(255, 255, 255));
@@ -307,7 +318,7 @@ public class Login extends javax.swing.JFrame {
         jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setFont(new java.awt.Font("Lucida Sans", 0, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 550, -1));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 310, -1));
 
         jLabel9.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -346,22 +357,37 @@ public class Login extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("RFC:");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, -1, -1));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 70, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setFont(new java.awt.Font("Lucida Sans", 0, 14)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 170, -1));
+        txt_rfc.setBackground(new java.awt.Color(255, 255, 255));
+        txt_rfc.setFont(new java.awt.Font("Lucida Sans", 0, 14)); // NOI18N
+        txt_rfc.setForeground(new java.awt.Color(0, 0, 0));
+        txt_rfc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_rfcActionPerformed(evt);
+            }
+        });
+        txt_rfc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_rfcKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txt_rfc, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 220, -1));
 
         jLabel15.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Numero de telefono:");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 150, -1, -1));
 
         jTextField6.setBackground(new java.awt.Color(255, 255, 255));
         jTextField6.setFont(new java.awt.Font("Lucida Sans", 0, 14)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 170, -1));
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 220, -1));
 
         jLabel16.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -374,7 +400,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 310, -1));
 
         lbl_Insert_Imagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
-        jPanel1.add(lbl_Insert_Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 220, 160));
+        jPanel1.add(lbl_Insert_Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, 130, 120));
 
         jLabel17.setFont(new java.awt.Font("Lucida Sans", 0, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -387,9 +413,57 @@ public class Login extends javax.swing.JFrame {
                 jLabel17MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 140, 30));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, 140, 30));
 
-        Panel_Registro.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 620, 430));
+        jToggleButton2.setBackground(new java.awt.Color(23, 0, 42));
+        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Continuar.png"))); // NOI18N
+        jToggleButton2.setBorder(null);
+        jToggleButton2.setContentAreaFilled(false);
+        jToggleButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 110, 70));
+
+        txt_r_usuario.setBackground(new java.awt.Color(255, 255, 255));
+        txt_r_usuario.setFont(new java.awt.Font("Lucida Sans", 0, 12)); // NOI18N
+        txt_r_usuario.setForeground(new java.awt.Color(0, 0, 0));
+        txt_r_usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_r_usuarioActionPerformed(evt);
+            }
+        });
+        txt_r_usuario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_r_usuarioKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txt_r_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 220, -1));
+
+        jLabel18.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Usuario:");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, -1, -1));
+
+        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setFont(new java.awt.Font("Lucida Sans", 0, 12)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "..." }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 220, -1));
+
+        jLabel19.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Tipo de Usuario:");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
+
+        Panel_Registro.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 660, 420));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de inicio (1).png"))); // NOI18N
         Panel_Registro.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 430));
@@ -409,7 +483,7 @@ public class Login extends javax.swing.JFrame {
                 MenuMouseClicked(evt);
             }
         });
-        panel_principal.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        panel_principal.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         getContentPane().add(panel_principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 490));
 
@@ -485,6 +559,40 @@ public class Login extends javax.swing.JFrame {
         Panel_Registro.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void txt_r_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_r_usuarioActionPerformed
+
+    }//GEN-LAST:event_txt_r_usuarioActionPerformed
+
+    private void txt_r_usuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_r_usuarioKeyTyped
+         if(txt_r_usuario.getText().length() >= 20)
+    {
+        evt.consume();//limita el ingrso de carateres y si ingrasa mas de 20 carateres los consumira y no los 
+                      //ingrasara dentro del text file3
+    }
+    }//GEN-LAST:event_txt_r_usuarioKeyTyped
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void txt_rfcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_rfcActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_rfcActionPerformed
+
+    private void txt_rfcKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_rfcKeyTyped
+        if(txt_rfc.getText().length() >= 13){
+        evt.consume();//limita el ingrso de carateres y si ingrasa mas de 20 carateres los consumira y no los
+        } //ingrasara dentro del text file3
+    }//GEN-LAST:event_txt_rfcKeyTyped
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -537,6 +645,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -546,6 +655,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -561,15 +672,21 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JLabel lbl_Insert_Imagen;
     private punto_venta.PanelRound panelRound2;
     private javax.swing.JPanel panel_card;
     private punto_venta.PanelRound panel_principal;
     private javax.swing.JPasswordField txt_password;
+    private javax.swing.JTextField txt_r_usuario;
+    private javax.swing.JTextField txt_rfc;
     private javax.swing.JTextField txt_usuario;
     // End of variables declaration//GEN-END:variables
+
+    private void cargardatosbd() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

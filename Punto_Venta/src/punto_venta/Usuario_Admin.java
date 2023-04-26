@@ -47,7 +47,7 @@ public class Usuario_Admin extends javax.swing.JPanel {
                 jPanel4MouseClicked(evt);
             }
         });
-        jPanel4.setLayout(new java.awt.GridLayout());
+        jPanel4.setLayout(new java.awt.GridLayout(1, 0));
 
         btn_Inicio1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_Inicio1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
@@ -57,14 +57,13 @@ public class Usuario_Admin extends javax.swing.JPanel {
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 50, 40));
 
         jPanel3.setBackground(new java.awt.Color(51, 0, 51));
-        jPanel3.setLayout(new java.awt.GridLayout());
+        jPanel3.setLayout(new java.awt.GridLayout(1, 0));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 50, 40));
 
         jLabel2.setBackground(new java.awt.Color(51, 0, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Inventario.png"))); // NOI18N
-        jPanel3.add(jLabel2);
-
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 50, 40));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 50, 40));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 550));
 
